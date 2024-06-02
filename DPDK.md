@@ -6,3 +6,10 @@ Usecases: enabling DPDK on your VM is useful when running the following:
 - Network function virtualization (NFV) deployments
 - Software-defined networking (SDN) applications
 - Video streaming or voice over IP applications
+
+## GCP
+One issue with running DPDK in a virtual environment, instead of on physical hardware, is that virtual environments lack support for SR-IOV and I/O Memory Management Unit (IOMMU) for high-performing applications.
+
+To overcome this limitation, you must run DPDK on guest physical addresses rather than host virtual addresses by using one of the following drivers:
+- Userspace I/O (UIO)
+- IOMMU-less Virtual Function I/O (VFIO)
