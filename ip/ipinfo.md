@@ -1,6 +1,6 @@
 # ipinfo.io
 IP data provider
-- Trusted by [Google colab](https://ai.google.dev/gemini-api/docs/available-regions#available_regions)
+- Trusted by Google Colab
 
 ```
 curl ipinfo.io
